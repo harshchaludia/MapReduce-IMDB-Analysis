@@ -17,18 +17,18 @@ Below instructions will get you a version of the project up and running on your 
 
 ### Procedure
 
-• Install Virtual Box & download the ubuntu vdi image.
-• Proceed with the installation of hadoop single node cluster.
-• After completing the installation, g
-• Start the hadoop daemons by typing the below command, and this starts all three nodes viz. namenode, datanode and secondary namenode.
+* Install Virtual Box & download the ubuntu vdi image.
+* Proceed with the installation of hadoop single node cluster.
+* After completing the installation,
+* Start the hadoop daemons by typing the below command, and this starts all three nodes viz. namenode, datanode and secondary namenode.
   i.e start-dfs.sh start-yarn.sh
-• Hadoop uses HDFS file system. Hence, we first had to decode the file system of Hadoop.
-• This is how we load input,
-  o Hadoop -dfs copyFromLocal imdb.txt
-• To execute the project, perform the following operation.
-  o bin/hadoop com.sun.tools.javac.main imdb.java
-  o jar cf imdb.jar imdb*.class
-  o hadoop jar project/imdb.jar project.imdb /imdb/input /imdb/output
+* Hadoop uses HDFS file system. Hence, we first had to decode the file system of Hadoop.
+* This is how we load input,
+  * Hadoop -dfs copyFromLocal imdb.txt
+* To execute the project, perform the following operation.
+  * bin/hadoop com.sun.tools.javac.main imdb.java
+  * jar cf imdb.jar imdb*.class
+  * hadoop jar project/imdb.jar project.imdb /imdb/input /imdb/output
  
 
 ## Running the tests
